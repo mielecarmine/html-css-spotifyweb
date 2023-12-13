@@ -4,6 +4,10 @@
   --main-top-color: #080b12;
   --main-content-color: #141922;
   --player-color: #282828;
+
+  /* LAYOUT */
+  --player-height: 100px;
+  --navbar-width: 200px;
 }
 
 
@@ -33,7 +37,9 @@ ul, ol {
   list-style: none;
 }
 
-
+li {
+  display: inline-block;
+}
 
 /* UTILS */
 
@@ -49,4 +55,46 @@ ul, ol {
   min-height: 80px;
   background-color: #777;
   padding: 2rem;
+}
+
+/* APP TOP */
+
+#app-top {
+  height: calc(100vh - var(--player-height)); 
+
+  display: flex;
+}
+
+/* APP PLAYER */
+
+#app-player {
+  background-color: var(--player-color);
+  height: var(--player-height);
+}
+
+/* APP NAVBAR */
+
+#app-navbar {
+  width: var(--navbar-width);
+  background-color: var(--navbar-color);
+}
+
+/* APP MAIN */
+
+#app-main {
+  flex-grow: 1;
+}
+
+/* MEDIA QUERY */
+
+@media all and (max-width: 552px) {
+  
+  :root {
+    --navbar-width: 50px;
+  }
+
+
+  #app-navbar {
+    width: var(--navbar-width);
+  }
 }
