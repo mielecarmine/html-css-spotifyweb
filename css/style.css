@@ -16,7 +16,7 @@
 /* RESET */
 
 body {
-  background-color: var(--main-top-color);
+  background-color: var(--main-content-color);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -63,7 +63,6 @@ li {
 
 #app-top {
   height: calc(100vh - var(--player-height)); 
-
   display: flex;
 }
 
@@ -172,6 +171,25 @@ li {
 #app-main {
   flex-grow: 1;
 }
+
+#app-main #upgrade-bar {
+  height: 70px;
+  background-color: var(--main-top-color);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#app-main #upgrade-bar button {
+  background-color: inherit;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 30px;
+  margin-right: 5px;
+}
+
+
 
 /* APP PLAYER */
 
