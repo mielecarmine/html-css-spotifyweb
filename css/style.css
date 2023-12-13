@@ -9,6 +9,7 @@
   /* LAYOUT */
   --player-height: 100px;
   --navbar-width: 200px;
+  --basic-gap: 8px;
 }
 
 
@@ -85,7 +86,7 @@ li {
 #app-navbar .menu {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: var(--basic-gap);
   font-size: small;
   margin-top: 10px;
 }
@@ -102,6 +103,68 @@ li {
 #app-navbar .playlist h5 {
   color: white;
 
+}
+
+#app-navbar .playlist .crea-playlist {
+  margin: 10px 0;
+  display: flex;
+  gap: var(--basic-gap);
+  align-items: center;
+}
+
+#plus {
+  background-color: #a3a3a3;
+  color: black;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+#app-navbar .playlist li {
+  margin: var(--basic-gap) 0;
+  font-size: small;
+}
+
+#app-navbar .install {
+  display: flex;
+  margin-top: auto;
+  border-bottom: 1px solid var(--navbar-text-color);
+  padding-bottom: var(--basic-gap)
+}
+
+#app-navbar .install span:first-child {
+  font-size: small;
+  display: flex;
+  gap: var(--basic-gap);
+  align-items: center;
+}
+
+#app-navbar .user {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: var(--basic-gap);
+  color: white;
+  font-size: small;
+  font-weight: 600;
+}
+
+#app-navbar .user #p-picture {
+  background-color: var(--navbar-text-color);
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app-navbar .user svg {
+  height: 1rem;
+  fill: white;
+  display: block;
 }
 
 /* APP MAIN */
