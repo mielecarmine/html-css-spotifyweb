@@ -4,6 +4,7 @@
   --main-top-color: #080b12;
   --main-content-color: #141922;
   --player-color: #282828;
+  --navbar-text-color: #696969;
 
   /* LAYOUT */
   --player-height: 100px;
@@ -65,24 +66,55 @@ li {
   display: flex;
 }
 
-/* APP PLAYER */
-
-#app-player {
-  background-color: var(--player-color);
-  height: var(--player-height);
-}
-
 /* APP NAVBAR */
 
 #app-navbar {
   width: var(--navbar-width);
   background-color: var(--navbar-color);
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  color: var(--navbar-text-color);
+}
+
+#app-navbar > img {
+  width: 75%;
+  margin-bottom: 15px;
+}
+
+#app-navbar .menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: small;
+  margin-top: 10px;
+}
+
+#app-navbar .menu svg {
+  height: 30px;
+  fill: var(--navbar-text-color);
+}
+
+#app-navbar .playlist {
+  margin-top: 20px;
+}
+
+#app-navbar .playlist h5 {
+  color: white;
+
 }
 
 /* APP MAIN */
 
 #app-main {
   flex-grow: 1;
+}
+
+/* APP PLAYER */
+
+#app-player {
+  background-color: var(--player-color);
+  height: var(--player-height);
 }
 
 /* MEDIA QUERY */
