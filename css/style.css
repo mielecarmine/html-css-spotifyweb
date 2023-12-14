@@ -7,7 +7,7 @@
   --navbar-text-color: #696969;
 
   /* LAYOUT */
-  --player-height: 100px;
+  --player-height: 80px;
   --navbar-width: 200px;
   --basic-gap: 8px;
 }
@@ -265,18 +265,64 @@ li {
   color: var(--navbar-text-color);
 }
 
-
-
-
-
-
-
 /* APP PLAYER */
 
 #app-player {
   background-color: var(--player-color);
   height: var(--player-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  color: white;
 }
+
+/* PLAY INFO DIV */
+#app-player .play-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+#app-player .play-info .song {
+  display: flex;
+  align-items: center;
+  gap: var(--basic-gap);
+}
+
+#app-player .song img {
+  height: 40px;
+}
+
+#app-player .song #song-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#song-info > span {
+  font-size: small;
+  color: var(--navbar-text-color);
+}
+
+#app-player .icons {
+  display: flex;
+  gap: 16px;
+  color: var(--navbar-text-color);
+}
+/* END OF PLAY INFO */
+
+#app-player .play-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.play-bar .actions {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+
 
 /* MEDIA QUERY */
 
