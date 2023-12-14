@@ -14,7 +14,6 @@
   --large-gap: 32px;
 }
 
-
 /* RESET */
 
 body {
@@ -123,6 +122,12 @@ li {
   margin-top: 10px;
 }
 
+#app-navbar .menu:hover svg,
+#app-navbar .menu:hover a {
+  color: white;
+  fill: white;
+}
+
 #app-navbar .menu svg {
   height: 30px;
   fill: var(--navbar-text-color);
@@ -130,6 +135,10 @@ li {
 
 #app-navbar .playlist {
   margin-top: 20px;
+}
+
+#app-navbar .playlist a:hover { 
+  color: white;
 }
 
 #app-navbar .playlist h5 {
@@ -154,6 +163,10 @@ li {
   align-items: center;
 }
 
+#plus i:hover {
+  color: white;
+}
+
 #app-navbar .playlist li {
   margin: var(--basic-gap) 0;
   font-size: small;
@@ -166,11 +179,15 @@ li {
   padding-bottom: var(--basic-gap)
 }
 
-#app-navbar .install span:first-child {
+#app-navbar .install span {
   font-size: small;
   display: flex;
   gap: var(--basic-gap);
   align-items: center;
+}
+
+#app-navbar .install span:hover {
+  color: white;
 }
 
 #app-navbar .user {
@@ -224,6 +241,10 @@ li {
   padding: 10px 30px;
   border-radius: 30px;
   margin-right: 5px;
+}
+
+#app-main #upgrade-bar button:hover {
+  transform: scale(1.2);
 }
 
 /* end of upgrade bar */
