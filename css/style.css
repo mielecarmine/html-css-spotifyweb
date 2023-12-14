@@ -253,6 +253,10 @@ li {
   margin-top: 20px;
 }
 
+#app-main .top-menu a:hover {
+  color: white;
+}
+
 #app-main .top-menu ul {
   display: flex;
   margin-top: 10px;
@@ -283,6 +287,12 @@ li {
   flex-direction: column;
   text-align: center;
   gap: var(--basic-gap);
+}
+
+#app-main .card .play-buttn {
+  background-color: #3636367c;
+  text-align: center;
+  height: 100%;
 }
 
 #app-main span {
@@ -328,10 +338,19 @@ li {
   color: var(--navbar-text-color);
 }
 
+#song-info > span:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 #app-player .icons {
   display: flex;
   gap: var(--double-gap);
   color: var(--navbar-text-color);
+}
+
+#app-player .icons i:hover {
+  color: white;
 }
 /* END OF PLAY INFO */
 
@@ -348,6 +367,14 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.play-bar .actions i:hover {
+  cursor: pointer;
+}
+
+.play-bar .actions #play-btn:hover {
+  transform: scale(1.1);
 }
 
 .play-bar .progress-bar {
@@ -368,6 +395,15 @@ li {
   background-color: white;
   border-radius: 5px;
 }
+
+.progress-line:hover .line {
+  background-color: limegreen;
+  cursor: pointer;
+}
+
+/* .progress-line:hover .line::after {
+
+} */
 
 .progress-bar span {
   font-size: small;
