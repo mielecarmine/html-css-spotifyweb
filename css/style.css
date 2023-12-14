@@ -29,6 +29,7 @@ body {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 a {
@@ -289,11 +290,25 @@ li {
   gap: var(--basic-gap);
 }
 
+#app-main .card > div:first-child {
+  position: relative;
+}
+
 #app-main .card .play-buttn {
   background-color: #3636367c;
-  text-align: center;
   height: 100%;
+  position: absolute;
+  width: 100%;
+  color: white;
+  font-size: xx-large;
+  display: none;
 }
+
+#app-main .card div:first-child:hover .play-buttn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
 
 #app-main span {
   color: var(--navbar-text-color);
