@@ -10,6 +10,8 @@
   --player-height: 80px;
   --navbar-width: 200px;
   --basic-gap: 8px;
+  --double-gap: 16px;
+  --large-gap: 32px;
 }
 
 
@@ -236,7 +238,7 @@ li {
   align-items: center;
   color: var(--navbar-text-color);
   font-size: small;
-  gap: 16px;
+  gap: var(--double-gap);
 }
 
 #app-main .container h2 {
@@ -281,7 +283,7 @@ li {
 #app-player .play-info {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: var(--large-gap);
 }
 
 #app-player .play-info .song {
@@ -306,7 +308,7 @@ li {
 
 #app-player .icons {
   display: flex;
-  gap: 16px;
+  gap: var(--double-gap);
   color: var(--navbar-text-color);
 }
 /* END OF PLAY INFO */
@@ -314,14 +316,40 @@ li {
 #app-player .play-bar {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--double-gap);
+  width: 300px;
 }
 
 .play-bar .actions {
-  gap: 16px;
+  gap: var(--large-gap);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
+
+.play-bar .progress-bar {
+  display: flex;
+  gap: var(--double-gap);
+  align-items: center;
+}
+
+.progress-bar .progress-line {
+  background-color: var(--navbar-text-color);
+  height: 3px;
+  width: 80%;
+}
+
+.progress-bar .line {
+  height: 100%;
+  width: 30%;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.progress-bar span {
+  font-size: small;
+}
+
 
 
 /* MEDIA QUERY */
