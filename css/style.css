@@ -461,6 +461,22 @@ li {
     width: calc(100% / 2);
   }
 
+  #app-player .play-info {
+    gap: var(--basic-gap);
+  }
+
+  #app-player .icons {
+    flex-direction: column;
+  }
+
+  #app-player .play-bar {
+    width: 220px;
+  }
+
+  .play-bar .actions {
+    gap: var(--double-gap);
+    font-size: smaller;
+  }
 }
 
 @media all and (max-width: 350px) {
