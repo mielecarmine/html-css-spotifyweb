@@ -107,7 +107,8 @@ li {
   flex-direction: column;
   padding: 15px;
   color: var(--navbar-text-color);
-  overflow: scroll;
+  overflow: auto;
+  flex-shrink: 0;
 }
 
 #app-navbar > img {
@@ -221,7 +222,7 @@ li {
 
 #app-main {
   flex-grow: 1;
-  overflow: scroll;
+  overflow: auto;
 }
 
 /* upgrade bar */
@@ -266,6 +267,7 @@ li {
   color: var(--navbar-text-color);
   font-size: small;
   gap: var(--double-gap);
+  flex-wrap: wrap;
 }
 
 #app-main .container h2 {
@@ -308,6 +310,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 } 
 
 #app-main span {
@@ -438,14 +441,35 @@ li {
 
 /* MEDIA QUERY */
 
-@media all and (max-width: 552px) {
-  
+@media all and (max-width: 768px) {
+  #app-main .row .col-1-6 {
+    width: calc(100% / 4);
+  }
+
+  #app-player .play-bar {
+    width: 300px;
+  }
+
+  #app-player .play-utils {
+    width: 150px;
+  }
+}
+
+@media all and (max-width: 576px) {
+
+  #app-main .row .col-1-6 {
+    width: calc(100% / 2);
+  }
+
+}
+
+@media all and (max-width: 350px) {
   :root {
     --navbar-width: 50px;
   }
 
-
   #app-navbar {
-    width: var(--navbar-width);
+    width: 50px;
   }
+
 }
